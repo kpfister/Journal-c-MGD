@@ -14,13 +14,13 @@
         <!--MyJournal-C-->
         <scene sceneID="EJ3-be-kax">
             <objects>
-                <tableViewController id="f4q-SM-Ocm" sceneMemberID="viewController">
+                <tableViewController id="f4q-SM-Ocm" customClass="EntriesListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hSQ-7R-Qck">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="emB-k6-fUH">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="entryCell" id="emB-k6-fUH" customClass="EntryTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="emB-k6-fUH" id="txA-nn-K9W">
@@ -65,6 +65,7 @@
                     <navigationItem key="navigationItem" title="MyJournal-C" id="rQx-Z3-iyv">
                         <barButtonItem key="backBarButtonItem" title=" " id="nDr-be-eGb"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="HTr-Ur-ej7">
+                            <color key="tintColor" red="0.95866960287094116" green="0.068017773330211639" blue="0.21739500761032104" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="pyC-EX-uNU" kind="show" identifier="addEntry" id="QPF-sq-Rkl"/>
                             </connections>
@@ -73,12 +74,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gsf-Eo-oKJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="504.80000000000001" y="72.413793103448285"/>
+            <point key="canvasLocation" x="564" y="72"/>
         </scene>
-        <!--View Controller-->
+        <!--Entry Detail View Controller-->
         <scene sceneID="6w0-LI-zde">
             <objects>
-                <viewController id="pyC-EX-uNU" sceneMemberID="viewController">
+                <viewController id="pyC-EX-uNU" customClass="EntryDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IML-0L-b0k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,6 +140,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FAB-uM-4W4">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.96527379751205444" green="0.020883006975054741" blue="0.8076130747795105" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

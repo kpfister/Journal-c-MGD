@@ -12,6 +12,10 @@
 		FBB4B91220E40BA200997F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB4B91120E40BA200997F38 /* Assets.xcassets */; };
 		FBB4B91520E40BA200997F38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB4B91320E40BA200997F38 /* LaunchScreen.storyboard */; };
 		FBB4B91820E40BA200997F38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB4B91720E40BA200997F38 /* main.m */; };
+		FBB4B92120E4106400997F38 /* EntriesListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB4B92020E4106400997F38 /* EntriesListTableViewController.m */; };
+		FBB4B92420E4107E00997F38 /* EntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB4B92320E4107E00997F38 /* EntryDetailViewController.m */; };
+		FBB4B92720E410A400997F38 /* EntryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB4B92620E410A400997F38 /* EntryTableViewCell.m */; };
+		FBB4B92A20E410F300997F38 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB4B92920E410F300997F38 /* Entry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,14 @@
 		FBB4B91420E40BA200997F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBB4B91620E40BA200997F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBB4B91720E40BA200997F38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBB4B91F20E4106400997F38 /* EntriesListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntriesListTableViewController.h; sourceTree = "<group>"; };
+		FBB4B92020E4106400997F38 /* EntriesListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntriesListTableViewController.m; sourceTree = "<group>"; };
+		FBB4B92220E4107E00997F38 /* EntryDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryDetailViewController.h; sourceTree = "<group>"; };
+		FBB4B92320E4107E00997F38 /* EntryDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryDetailViewController.m; sourceTree = "<group>"; };
+		FBB4B92520E410A400997F38 /* EntryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryTableViewCell.h; sourceTree = "<group>"; };
+		FBB4B92620E410A400997F38 /* EntryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryTableViewCell.m; sourceTree = "<group>"; };
+		FBB4B92820E410F300997F38 /* Entry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		FBB4B92920E410F300997F38 /* Entry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +67,15 @@
 		FBB4B90720E40BA100997F38 /* Journal-C-WithMGD */ = {
 			isa = PBXGroup;
 			children = (
-				FBB4B91E20E40C9500997F38 /* Misc */,
 				FBB4B90E20E40BA100997F38 /* Main.storyboard */,
+				FBB4B92B20E414D300997F38 /* Model */,
+				FBB4B92520E410A400997F38 /* EntryTableViewCell.h */,
+				FBB4B92620E410A400997F38 /* EntryTableViewCell.m */,
+				FBB4B91F20E4106400997F38 /* EntriesListTableViewController.h */,
+				FBB4B92020E4106400997F38 /* EntriesListTableViewController.m */,
+				FBB4B92220E4107E00997F38 /* EntryDetailViewController.h */,
+				FBB4B92320E4107E00997F38 /* EntryDetailViewController.m */,
+				FBB4B91E20E40C9500997F38 /* Misc */,
 			);
 			path = "Journal-C-WithMGD";
 			sourceTree = "<group>";
@@ -72,6 +91,15 @@
 				FBB4B91720E40BA200997F38 /* main.m */,
 			);
 			path = Misc;
+			sourceTree = "<group>";
+		};
+		FBB4B92B20E414D300997F38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBB4B92820E410F300997F38 /* Entry.h */,
+				FBB4B92920E410F300997F38 /* Entry.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,8 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBB4B92A20E410F300997F38 /* Entry.m in Sources */,
 				FBB4B91820E40BA200997F38 /* main.m in Sources */,
 				FBB4B90A20E40BA100997F38 /* AppDelegate.m in Sources */,
+				FBB4B92720E410A400997F38 /* EntryTableViewCell.m in Sources */,
+				FBB4B92420E4107E00997F38 /* EntryDetailViewController.m in Sources */,
+				FBB4B92120E4106400997F38 /* EntriesListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
