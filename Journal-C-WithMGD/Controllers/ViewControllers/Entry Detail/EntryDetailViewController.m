@@ -9,6 +9,13 @@
 #import "EntryDetailViewController.h"
 
 @interface EntryDetailViewController ()
+#pragma Outlets
+@property (weak, nonatomic) IBOutlet UITextView *entryBodyTextView;
+@property (weak, nonatomic) IBOutlet UILabel *entryTitleLabel;
+@property (weak, nonatomic) IBOutlet UIButton *clearTextButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
+
+
 
 @end
 
@@ -34,4 +41,10 @@
 }
 */
 
+#pragma Actions
+- (IBAction)saveButtonTapped:(id)sender {
+}
+
+- (IBAction)clearButtonTapped:(id)sender {
+}
 @end

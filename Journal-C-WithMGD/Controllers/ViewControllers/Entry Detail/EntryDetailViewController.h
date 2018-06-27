@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Entry.h"
 
 @interface EntryDetailViewController : UIViewController
+
+#pragma Properties
+
+@property (nonatomic, readwrite) Entry *entry;
+
 
 @end

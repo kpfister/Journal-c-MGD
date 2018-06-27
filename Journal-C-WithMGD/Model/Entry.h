@@ -20,8 +20,8 @@
 // Init this class - This will make this method public
 #pragma Initializer
 -(instancetype)initWithTitle: (NSString *) title
-                   timestamp: (NSDate *) timestamp;
-//                    bodyText: (NSString *) bodyText;
+                    bodyText: (NSString *) bodyText;
+//                   timestamp: (NSDate *) timestamp;
 
 
 @end

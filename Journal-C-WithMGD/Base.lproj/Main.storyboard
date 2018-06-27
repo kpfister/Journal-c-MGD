@@ -53,6 +53,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="entryTimestampLabel" destination="R4A-np-ehz" id="Mij-jz-xJ7"/>
+                                    <outlet property="entryTitleLabel" destination="nHy-la-WY1" id="7LA-g2-vfC"/>
                                     <segue destination="pyC-EX-uNU" kind="show" identifier="toDetail" id="3Wn-Ev-dZy"/>
                                 </connections>
                             </tableViewCell>
@@ -76,7 +78,7 @@
             </objects>
             <point key="canvasLocation" x="564" y="72"/>
         </scene>
-        <!--Entry Detail View Controller-->
+        <!--Title-->
         <scene sceneID="6w0-LI-zde">
             <objects>
                 <viewController id="pyC-EX-uNU" customClass="EntryDetailViewController" sceneMemberID="viewController">
@@ -97,6 +99,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <color key="backgroundColor" red="0.01162372250109911" green="0.96543639898300171" blue="0.20959818363189697" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </stackView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4gE-BN-t1G">
                                         <rect key="frame" x="26" y="20.5" width="323" height="534.5"/>
@@ -114,9 +117,12 @@
                                     <constraint firstAttribute="height" constant="30" id="cjk-r6-sPO"/>
                                 </constraints>
                                 <state key="normal" title="Clear Text"/>
+                                <connections>
+                                    <action selector="clearButtonTapped:" destination="pyC-EX-uNU" eventType="touchUpInside" id="rni-IS-eX2"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6ab-yu-40X" firstAttribute="leading" secondItem="stc-QH-xwg" secondAttribute="leading" id="5Ss-zl-IpF"/>
                             <constraint firstItem="stc-QH-xwg" firstAttribute="bottom" secondItem="kKJ-kh-Db0" secondAttribute="bottom" constant="8" id="MFy-8q-1aX"/>
@@ -127,6 +133,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="stc-QH-xwg"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="e9t-4g-mkV">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="yga-95-Gbb">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="pyC-EX-uNU" id="jC2-gc-P2g"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="clearTextButton" destination="kKJ-kh-Db0" id="EhM-rh-5yl"/>
+                        <outlet property="entryBodyTextView" destination="4gE-BN-t1G" id="8tw-5s-qer"/>
+                        <outlet property="entryTitleLabel" destination="4vZ-DX-j4y" id="P7X-qF-R9G"/>
+                        <outlet property="saveButton" destination="yga-95-Gbb" id="aXE-7R-GxB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZL-vn-ngu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

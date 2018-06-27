@@ -10,4 +10,7 @@
 
 @interface EntryTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *entryTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *entryTimestampLabel;
+
 @end
